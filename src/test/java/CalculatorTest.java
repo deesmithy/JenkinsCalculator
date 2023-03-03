@@ -58,9 +58,7 @@ public class CalculatorTest {
     @Test
     public void divideByZeroFailure(){
         Calculator myCalculator = new Calculator();
-
         String failureMessage =  "/ by zero";
-
         try{
             myCalculator.divide(5, 0);
             fail();
@@ -68,8 +66,6 @@ public class CalculatorTest {
         catch (ArithmeticException e){
             assertTrue(failureMessage.contains(e.getMessage()));
         }
-
-
     }
 
     @Test
@@ -86,7 +82,6 @@ public class CalculatorTest {
         assertEquals(13 , myCalculator.fibonacciNumberFinder(7));
         assertEquals(21 , myCalculator.fibonacciNumberFinder(8));
         assertEquals(317811 , myCalculator.fibonacciNumberFinder(28));
-
     }
 
     @Test
@@ -98,7 +93,6 @@ public class CalculatorTest {
         assertEquals("10100" , myCalculator.intToBinaryNumber(20));
         assertEquals("1111100111" , myCalculator.intToBinaryNumber(999));
         assertEquals("1111111111" , myCalculator.intToBinaryNumber(1023));
-
     }
 
     @Test
