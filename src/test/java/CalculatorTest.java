@@ -66,7 +66,6 @@ public class CalculatorTest {
         catch (ArithmeticException e){
             assertTrue(failureMessage.contains(e.getMessage()));
         }
-
     }
 
     @Test
